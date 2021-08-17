@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\daundka\\source\\repos\\CRM\\CRM\\CRM.csproj": {}
+    "C:\\Users\\patil2\\Source\\Repos\\SE2Traing2021.NetBatch2\\CRM\\CRM\\CRM.csproj": {}
   },
   "projects": {
-    "C:\\Users\\daundka\\source\\repos\\CRM\\CRM\\CRM.csproj": {
+    "C:\\Users\\patil2\\Source\\Repos\\SE2Traing2021.NetBatch2\\CRM\\CRM\\CRM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\daundka\\source\\repos\\CRM\\CRM\\CRM.csproj",
+        "projectUniqueName": "C:\\Users\\patil2\\Source\\Repos\\SE2Traing2021.NetBatch2\\CRM\\CRM\\CRM.csproj",
         "projectName": "CRM",
-        "projectPath": "C:\\Users\\daundka\\source\\repos\\CRM\\CRM\\CRM.csproj",
-        "packagesPath": "C:\\Users\\daundka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\daundka\\source\\repos\\CRM\\CRM\\obj\\",
+        "projectPath": "C:\\Users\\patil2\\Source\\Repos\\SE2Traing2021.NetBatch2\\CRM\\CRM\\CRM.csproj",
+        "packagesPath": "C:\\Users\\patil2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\patil2\\Source\\Repos\\SE2Traing2021.NetBatch2\\CRM\\CRM\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\daundka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\patil2\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
