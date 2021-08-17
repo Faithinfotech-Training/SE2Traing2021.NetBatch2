@@ -2174,21 +2174,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
-      },
-      "ClassLibrary1/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "EntityFramework": "6.4.4",
-          "Microsoft.EntityFrameworkCore": "5.0.9",
-          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.9"
-        },
-        "compile": {
-          "bin/placeholder/ClassLibrary1.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ClassLibrary1.dll": {}
-        }
       }
     }
   },
@@ -7653,16 +7638,10 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
-    },
-    "ClassLibrary1/1.0.0": {
-      "type": "project",
-      "path": "../ClassLibrary1/ClassLibrary1.csproj",
-      "msbuildProject": "../ClassLibrary1/ClassLibrary1.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "ClassLibrary1 >= 1.0.0",
       "EntityFramework >= 6.4.4",
       "Microsoft.EntityFrameworkCore >= 5.0.9",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.9",
@@ -7677,11 +7656,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\daundka\\source\\repos\\ProffesorManagementSystem\\ProffesorManagementSystem\\ProffesorManagementSystem.csproj",
+      "projectUniqueName": "C:\\Users\\daundka\\Source\\Repos\\SE2Traing2021.NetBatch2\\ProffesorManagementSystem\\ProffesorManagementSystem.csproj",
       "projectName": "ProffesorManagementSystem",
-      "projectPath": "C:\\Users\\daundka\\source\\repos\\ProffesorManagementSystem\\ProffesorManagementSystem\\ProffesorManagementSystem.csproj",
+      "projectPath": "C:\\Users\\daundka\\Source\\Repos\\SE2Traing2021.NetBatch2\\ProffesorManagementSystem\\ProffesorManagementSystem.csproj",
       "packagesPath": "C:\\Users\\daundka\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\daundka\\source\\repos\\ProffesorManagementSystem\\ProffesorManagementSystem\\obj\\",
+      "outputPath": "C:\\Users\\daundka\\Source\\Repos\\SE2Traing2021.NetBatch2\\ProffesorManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\daundka\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7697,11 +7676,7 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {
-            "C:\\Users\\daundka\\source\\repos\\ProffesorManagementSystem\\ClassLibrary1\\ClassLibrary1.csproj": {
-              "projectPath": "C:\\Users\\daundka\\source\\repos\\ProffesorManagementSystem\\ClassLibrary1\\ClassLibrary1.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

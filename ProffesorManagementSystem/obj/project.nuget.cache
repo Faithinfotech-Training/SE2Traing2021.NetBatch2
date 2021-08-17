@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NPRybDgdDhRLN6spjuIk/VeABzas9NS4WYRvLbS1GJ6AihreajpDWYy2jCfkl04tt9IJudZfsdZjJ2910yjwLw==",
+  "dgSpecHash": "zIcZYAns6Awz6G6anYOYTVdSZz8O7MOBfq3d/ecCSOh+L5lk1b5n0otn637To0HGR2cOS8ixbMY7T62YarDzbQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\daundka\\source\\repos\\ProffesorManagementSystem\\ProffesorManagementSystem\\ProffesorManagementSystem.csproj",
+  "projectFilePath": "C:\\Users\\daundka\\Source\\Repos\\SE2Traing2021.NetBatch2\\ProffesorManagementSystem\\ProffesorManagementSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\daundka\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\daundka\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

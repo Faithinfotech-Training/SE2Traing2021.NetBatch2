@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2Etul3hkk0c3YZVnuLSwMfIx9/OuaKFFG2S32psNfbLkNywHzUYAdf7xeaaFVO/JJErod02oKQdLffjyXz+bLA==",
+  "dgSpecHash": "xnSt5t4W5uloknnhFYqX993miPvVdVVqT3mj/qYS2YvDO0+bJ2WxSA2/tTIEZ2BtCiTajR+1rOjKjq3Rw3YuUA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\daundka\\source\\repos\\ProffesorManagementSystem\\ClassLibrary1\\ClassLibrary1.csproj",
+  "projectFilePath": "C:\\Users\\daundka\\Source\\Repos\\SE2Traing2021.NetBatch2\\ClassLibrary1\\ClassLibrary1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\daundka\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\daundka\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

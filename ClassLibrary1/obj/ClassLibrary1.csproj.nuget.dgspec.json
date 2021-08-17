@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\daundka\\source\\repos\\ProffesorManagementSystem\\ClassLibrary1\\ClassLibrary1.csproj": {}
+    "C:\\Users\\daundka\\Source\\Repos\\SE2Traing2021.NetBatch2\\ClassLibrary1\\ClassLibrary1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\daundka\\source\\repos\\ProffesorManagementSystem\\ClassLibrary1\\ClassLibrary1.csproj": {
+    "C:\\Users\\daundka\\Source\\Repos\\SE2Traing2021.NetBatch2\\ClassLibrary1\\ClassLibrary1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\daundka\\source\\repos\\ProffesorManagementSystem\\ClassLibrary1\\ClassLibrary1.csproj",
+        "projectUniqueName": "C:\\Users\\daundka\\Source\\Repos\\SE2Traing2021.NetBatch2\\ClassLibrary1\\ClassLibrary1.csproj",
         "projectName": "ClassLibrary1",
-        "projectPath": "C:\\Users\\daundka\\source\\repos\\ProffesorManagementSystem\\ClassLibrary1\\ClassLibrary1.csproj",
+        "projectPath": "C:\\Users\\daundka\\Source\\Repos\\SE2Traing2021.NetBatch2\\ClassLibrary1\\ClassLibrary1.csproj",
         "packagesPath": "C:\\Users\\daundka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\daundka\\source\\repos\\ProffesorManagementSystem\\ClassLibrary1\\obj\\",
+        "outputPath": "C:\\Users\\daundka\\Source\\Repos\\SE2Traing2021.NetBatch2\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\daundka\\AppData\\Roaming\\NuGet\\NuGet.Config",
