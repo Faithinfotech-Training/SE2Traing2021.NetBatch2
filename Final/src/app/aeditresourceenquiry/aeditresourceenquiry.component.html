@@ -1,0 +1,24 @@
+<div class="container">
+<form [formGroup]="resourceenquiryForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="exampleInputEmail1" class="form-label">Name</label>
+          <input type="text" class="form-control"  formControlName="name">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input type="text" class="form-control"  formControlName="email">         
+          <label for="exampleInputEmail1" class="form-label">Phone</label>
+          <input type="text" class="form-control"  formControlName="phone">
+          <label for="exampleInputEmail1" class="form-label">Enquiry Date</label>     
+          <input type="text" class="form-control"  formControlName="enquiryDate">
+          <label for="exampleInputEmail1" class="form-label">Enquiry Status</label>
+          <input type="text" class="form-control"  formControlName="resEnquiryStatus">
+         <label for="exampleInputEmail1" class="form-label">Resource Id</label>
+          <input type="text" class="form-control" formControlName="resourceId" >
+          <label for="exampleInputEmail1" class="form-label">Resource  Enquiry Id</label>
+          <input type="text" class="form-control" formControlName="rEnquiryId" >
+          
+        </div>
+        
+        <br>
+        <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+</form> 
+</div>

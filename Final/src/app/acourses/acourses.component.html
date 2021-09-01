@@ -1,0 +1,60 @@
+
+<nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1" style="margin-left:100px"> Manage Courses</span>
+    <!-- <button class="btn btn-outline-success" style="margin-right:35px" routerLink="/addcourse" > Add Courses</button> -->
+
+    <button type="button"  style="margin-right:100px" class="btn btn-outline-success" data-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registerModal">
+            Create Course
+    </button>
+</nav>
+
+<h5 style="align-items: center; justify-content: center;text-align: center;">List of Courses</h5>
+<div class="container"  >
+    <!-- <button class="btn btn-info" routerLink="/courses/course">Add New Course</button> -->
+    <div class="column">
+        <div class="row" >
+            <div class="card" style="width: 20rem; margin: 10px; margin-bottom:45px; "class="shadow p-3 mb-5 bg-white rounded border border-warning"   *ngFor="let c of courses;">
+                <div class="container" >
+                    <p style="font-size: 15px; margin-left:-20px; color:green">{{c.couresId}}</p>
+                    <h5 class="card-title">Course: <b>{{c.courseName}}</b></h5>
+                    <p>Desc: {{c.courseDescription}}</p>
+                    <p>Duration: {{c.courseDuration}} hours</p>
+                    <p style="color:green"><strong style="color:black">Status: </strong>{{c.courseStatus}}</p>
+                    <!-- <p>{{c.courseAvailability}}</p> -->
+                    <button class="btn btn-outline-warning  btn-block" style="margin-left:60px" routerLink="/editcourse/{{c.couresId}}">Edit Course</button>
+                    <!-- <button class="btn btn-outline-danger" style="margin-left:15px;" (click)=delete(c.couresId)>Delete</button> -->
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- 
+
+COMMENT
+
+
+ -->
+
+ <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="registerModalLabel">Create Course</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <app-addcourse></app-addcourse>
+                </div>
+                
+            </div>
+        </div>
+</div>
+    
+    
+    
+     <!--  -->

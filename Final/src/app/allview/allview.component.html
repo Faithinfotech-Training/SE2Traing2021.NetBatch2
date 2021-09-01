@@ -1,0 +1,43 @@
+<h5 style="align-items: center; justify-content: center;text-align: center;">List of Courses</h5>
+<div class="container"  >
+    <!-- <button class="btn btn-info" routerLink="/courses/course">Add New Course</button> -->
+    <div class="column">
+        <div class="row" >
+            <div class="card" style="width: 20rem; margin: 10px; "class="shadow p-3 mb-5 bg-white rounded border border-success"   *ngFor="let c of course;">
+                <div class="container" >
+                    <!-- <p>{{c.courseId}}</p> -->
+                    <h5 class="card-title">Course:<b>{{c.courseName}}</b></h5>
+                    <p>Desc:{{c.courseDescription}}</p>
+                    <p>Duration:{{c.courseDuration}}</p>
+                    <p style="color:green"><strong style="color:black">Status:</strong>{{c.courseStatus}}</p>
+                    <!-- <p>{{c.courseAvailability}}</p> -->
+                    <!-- <button class="btn btn-info" routerLink="/courseEnquiries/courseEnquiry">Enquire</button> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<h5 style="align-items: center; justify-content: center;text-align: center;">List of Resources</h5>
+<div class="container"  >
+    <!-- <button class="btn btn-info" routerLink="/courses/course">Add New Course</button> -->
+    <div class="column">
+        <div class="row" >
+            <div class="card" style="width: 20rem; margin: 10px; "class="shadow p-3 mb-5 bg-white rounded border border-warning"   *ngFor="let c of resource;">
+                <div class="container" >
+                    <!-- <p>{{c.courseId}}</p> -->
+                    <h5 class="card-title">Resource:<b>{{c.resourceName}}</b></h5>
+                    <p>Date:{{c.resRecordDate}}</p>
+                    <p>Type:{{c.resourceType}}</p>
+                    <p style="color:green"><strong style="color:black">Status:</strong>{{c.resourceStatus}}</p>
+
+                    <!-- <p>{{c.courseAvailability}}</p> -->
+                    <!-- <button class="btn btn-info" routerLink="/courseEnquiries/courseEnquiry">Enquire</button> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

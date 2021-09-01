@@ -1,0 +1,106 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light" >
+   <div class="container-fluid">
+     <a class="navbar-brand" href="#"><img src="assets/Geoinfotech.png" width="150" height="40" alt=""></a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: #7acc00;height: 55px; margin-bottom:-10px;margin-top:-10px;">
+       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         <!-- <li class="nav-item">
+           <a class="nav-link active" aria-current="page" routerLink="/register">Register</a>
+         </li> -->
+         <!-- <li class="nav-item">
+          <a class="nav-link active" aria-current="page" *ngIf="!isUserlogin" routerLink="/login">Login</a>
+        </li> -->
+        <!-- <li class="nav-item">
+          <a class="nav-link active" aria-current="page" *ngIf="isUserlogin && isAdmin"  routerLink="/manager">Management</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" *ngIf="isUserlogin && isUser"  routerLink="/course">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" *ngIf="isUserlogin && isUser"  routerLink="/resource">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" *ngIf="isUserlogin && isAdmin"  routerLink="/acourse">Courses</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" *ngIf="isUserlogin && isAdmin"  routerLink="/aresource">Resources</a>
+          </li>
+
+          <li class="nav-item">
+              <a class="nav-link active" aria-current="page" *ngIf="isUserlogin && isAdmin"  routerLink="/acourseenquiry">Course Enquiry</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" *ngIf="isUserlogin && isAdmin"  routerLink="/aresourceenquiry">Resource Enquiry</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" *ngIf="isManager"  routerLink="/manager/course">Course </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" *ngIf="isManager"  routerLink="/minsight">Insights </a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" *ngIf="isUserlogin || isAdmin || isManager"  routerLink="/allview">ViewAll</a>
+                </li>
+            
+        <!-- <li class="nav-item">
+          <a class="nav-link active" aria-current="page" *ngIf="isUserlogin"  routerLink="/login"  (click)="onLogout()">Logout</a>
+        </li> -->
+       </ul>  
+       <form class=" justify-content-start d-flex">
+        <!-- <button class="btn btn-outline-success me-2" type="button" *ngIf="!isUserlogin" routerLink="/register">Register</button> -->
+        <button type="button" class="btn btn-success me-2" data-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registerModal" *ngIf="!isUserlogin">
+          Register
+        </button>
+        
+        <button type="button" class="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#loginModal" *ngIf="!isUserlogin">
+          Login
+        </button>
+        <button style="margin-right:100px;" class="btn btn-danger" type="button" *ngIf="isUserlogin"  routerLink="/home"  (click)="onLogout()">LogOut</button>
+
+      </form> 
+     </div>
+   </div>
+ </nav>
+<router-outlet></router-outlet>
+ <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Please Login to CRM</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <app-login></app-login>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="registerModalLabel">Please Register to CRM</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <app-register></app-register>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<footer class="bg-light text-center text-lg-start" style="position:fixed;bottom:0; width:100%">
+    <div class="text-center p-3" style="background-color: #7acc00">
+      © 2020 Copyright:
+      <a class="text-dark" href="#">GeoInfotech</a>
+    </div>
+  </footer>
