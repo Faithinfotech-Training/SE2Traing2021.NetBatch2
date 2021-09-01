@@ -1,0 +1,43 @@
+
+      
+
+
+      <h5 style="align-items: center; justify-content: center;text-align: center;">List of Resources</h5>
+<div class="container"  >
+    <!-- <button class="btn btn-info" routerLink="/courses/course">Add New Course</button> -->
+    <div class="column">
+        <div class="row" >
+            <div class="card" style="width: 20rem; margin: 10px; "class="shadow p-3 mb-5 bg-white rounded border border-danger"   *ngFor="let c of resources;">
+                <div class="container" >
+                        <p style="font-size: 15px; margin-left:-20px; color:green">{{c.resourceId}}</p>
+                    <h5 class="card-title">Course:<b>{{c.resourceName}}</b></h5>
+                    <p>Date:{{c.resRecordDate}}</p>
+                    <p>Type:{{c.resourceType}}</p>
+                    <p style="color:green"><strong style="color:black">Status:</strong>{{c.resourceStatus}}</p>
+                    <!-- <p>{{c.courseAvailability}}</p> -->
+                    <!-- <button class="btn btn-outline-danger btn-block" style="margin-left:60px" routerLink="/resourceenquiry/{{c.resourceId}}">Enquire</button> -->
+                    <!-- <button class="btn btn-outline-danger" style="margin-left:15px;" routerLink="/delete/{{c.resourceId}}">Delete</button> -->
+                    <button type="button"  style="margin-left:50px;" class="btn btn-outline-danger"  data-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registerModal">
+                        Enquire Resource
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="registerModalLabel">Enquire Resource</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <app-resource-enquiry></app-resource-enquiry>
+            </div>
+            
+        </div>
+    </div>
+</div>

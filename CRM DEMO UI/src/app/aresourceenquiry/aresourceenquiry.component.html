@@ -1,0 +1,91 @@
+<div class="container" style="margin-top:25px;">
+<table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Resource ID</th>
+            <!-- <th scope="col">Course Name</th> -->
+            <th scope="col">User Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone Number</th>
+            <th scope="col">Enquiry Date</th>
+            <th scope="col">Resource</th>
+
+            <th scope="col">EnquiryStatus</th>
+            
+            <!-- <th scope="col">Course Price</th>
+            <th scope="col">Course Description</th>
+            <th scope="col">Course Status</th> -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let c of courses" >
+            
+            <td>{{c.rEnquiryId}}</td>
+            <td>{{c.name}}</td>
+            <td>{{c.email}}</td>
+            <td>{{c.phone}}</td>
+            <td>{{c.enquiryDate}}</td>
+            <td>{{c.resourceId}}</td>
+            <td>{{c.resEnquiryStatus}}</td>
+            <!-- <td><a routerLink="/aeditresourceenquiry/{{c.rEnquiryId}}">Edit</a></td> -->
+            <td><button type="button" class="btn btn-primary" routerLink="/aeditresourceenquiry/{{c.rEnquiryId}}" > Edit </button></td>
+            <!-- <td><button   type="button" class="btn btn-primary" >
+                Edit
+              </button></td> -->
+              <!-- <td><button type="button" (click)=delete(c.rEnquiryId) class="btn btn-danger" >
+                    Delete
+                </button></td> -->
+            <!-- <td><a routerLink="/courseenquiry/{{c.cEnquiryId}}">Update Status</a></td> -->
+            <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+      </button> -->
+          <!-- <td><a routerlink="/courseenquiry"><i class="fa fa-edit" style="font-size: 15px; color:rgb(10,2,116); cursor:pointer;"></i></a></td> -->
+            <!-- <td>{{c.coursePrice}}</td>
+            <td>{{c.courseDesc}}</td>
+            <td>{{c.courseStatus}}</td> -->
+            
+          </tr>
+          
+            
+        </tbody>
+      </table>
+    </div>
+     <!-- Button trigger modal -->
+
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <app-updatecenquiry></app-updatecenquiry>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+
+
+      <div style="margin-left: 300px; margin-top:25px;">
+
+        <h5 style="text-align: center; margin-left: -300px;"> Change Enquiry Status</h5>
+        <label style="margin:15px;">Status</label>
+      <select #EnquiryStatus="ngModel" [(ngModel)]="registrationViewModel.EnquiryStatus" name="EnquiryStatus"
+                  form="registrationForm">
+                  <option value="Enquired">Enquired</option>
+                  <option value="Admitted">Admitted</option>
+                  <option value="Rejected">Rejected</option>
+                  <option value="Selected">Selected</option>
+                  <option value="Vacant">Vacant(Resource)</option>
+                  <option value="Allocated">Allocated(Resource)</option>
+        </select>
+        <label style="margin:15px;">Enquiry Id</label>
+        <input #Id="ngModel" [(ngModel)]="registrationViewModel.Id" name="Id"
+                form="registrationForm" type="text">
+        <button style="margin-left:30px;"class="btn btn-success"(click)="statusUpdate()">Confirm</button>
+      </div>

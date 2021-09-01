@@ -1,0 +1,80 @@
+
+  <div>
+    <p-table #todoTable [value]="courses" [filterDelay]="0"
+        [globalFilterFields]="['couresId', 'courseName', 'courseDescription', 'courseDuration','courseStatus']">
+            <ng-template pTemplate="caption">
+                    <div class="table-header">
+                    List of Courses
+                        <span class="p-input-icon-left">
+                            <i class="pi pi-search"></i>
+                            <!-- <input pInputText type="text" (input)="todoTable.filterGlobal($event.target.value, 'contains')"
+                            placeholder="Search" /> -->
+                        </span>
+                    </div>
+            </ng-template>
+      <ng-template pTemplate="header">
+        <tr>
+          <th pSortableColumn="couresId">
+            Course ID <p-sortIcon field="couresId"></p-sortIcon>
+          </th>
+          <th pSortableColumn="courseName">
+            Course  Name <p-sortIcon field="courseName"></p-sortIcon>
+          </th>
+          <th pSortableColumn="courseDescription">
+            Course Description <p-sortIcon field="courseDescription"></p-sortIcon>
+          </th>
+          <th pSortableColumn="courseDuration">
+            Course Duration <p-sortIcon field="courseDuration"></p-sortIcon>
+          </th>
+          <th pSortableColumn="courseStatus">
+            Course Status <p-sortIcon field="courseStatus"></p-sortIcon>
+          </th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+          <th>
+            <!-- <input pInputText type="text" (input)="
+                todoTable.filter($event.target.value,'couresId','startsWith')
+              " placeholder="Search by Id" class="p-column-filter" /> -->
+          </th>
+          <th>
+            <!-- <input pInputText type="text" (input)="
+                todoTable.filter($event.target.value, 'courseName', 'startsWith')
+              " placeholder="Search by Name" class="p-column-filter" /> -->
+          </th>
+          <th>
+            <!-- <input pInputText type="text" (input)="
+                todoTable.filter($event.target.value, 'courseDescription', 'startsWith')
+              " placeholder="Search by courseDescription" class="p-column-filter" /> -->
+          </th>
+          <th>
+            <!-- <input pInputText type="text" (input)="
+                todoTable.filter($event.target.value, 'courseDuration', 'startsWith')
+              " placeholder="Search by courseDuration" class="p-column-filter" /> -->
+          </th>
+          <th>
+            <!-- <input pInputText type="text" (input)="
+                todoTable.filter($event.target.value, 'courseStatus', 'startsWith')
+              " placeholder="Search by EndDate" class="p-column-filter" /> -->
+          </th>
+          
+          <th></th>
+          <th></th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-todo>
+        <tr *ngFor="let c of courses" >
+          <td>{{ c.couresId }}</td>
+          <td>{{ c.courseName }}</td>
+          <td>{{ c.courseDescription }}</td>
+          <td>{{ c.courseDuration }}</td>
+          <td>{{ c.courseStatus }}</td>
+         <!-- <td><a routerLink="/Home/todo/edit/{{todo.id }}"><i class="fa fa-pencil-square-o fa-lg"></i></a></td>
+         <td><a (click)="deleteTask(todo.id)"><i class="fa fa-trash fa-lg"></i></a></td> -->
+  
+        </tr>
+  
+      </ng-template>
+    </p-table>
+  </div>

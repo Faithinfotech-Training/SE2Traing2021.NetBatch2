@@ -1,0 +1,86 @@
+<div class="container">
+        <form #registrationForm="ngForm">
+     
+             <div class="row">
+                 <p>Select:&emsp;</p>
+                 <div class="div1">
+                     <select #controller="ngModel" [(ngModel)]="registrationViewModel.controller" name="controller"
+                         form="registrationForm">
+                     
+                         <option value="CourseEnquiry">Course Enquiry</option>
+                         <option value="ResourceEnquiry">Resource Enquiry</option>
+                     </select>
+                 </div>
+                 <div class="div2">
+                     <select #status="ngModel" [(ngModel)]="registrationViewModel.status" name="status"
+                         form="registrationForm">
+                         <option value="Enquired">Enquired</option>
+                         <option value="Admitted">Admitted</option>
+                         <option value="Rejected">Rejected</option>
+     
+                         <option value="Vacant">Vacant(Resource)</option>
+                         <option value="Allocated">Allocated(Resource)</option>
+                     </select>
+                 </div>
+                 <button type="submit" class="btn btn-success" (click)="submitRegistration()">Search</button>
+             </div>
+             
+             <div *ngIf="checkResponse && courseEnquiry">
+                 <table class='table'>
+                     <thead>
+                       <tr>
+                         <th>Course Enquiry ID</th>
+                         <th>Course ID</th>
+                         <th>User Name</th>
+                         <th>Email ID</th>
+                         <th>Phone Number</th>
+                         <th>Date of Birth</th>
+                         <th>Qualification</th>
+                         <th>Test Score</th>
+                         <th>Enquiry Status</th>
+                       </tr>
+                     </thead>
+                     <tbody>
+                       <tr *ngFor="let ce of enquiries;">
+                         <td>{{ce.cEnquiryId}}</td>
+                         <td>{{ce.courseId}}</td>
+                         <td>{{ce.name}}</td>
+                         <td>{{ce.email}}</td>
+                         <td>{{ce.phone}}</td>
+                         <td>{{ce.age}}</td>
+                         <td>{{ce.qualification}}</td>
+                         <td>{{ce.testScore}}</td>
+                         <td>{{ce.enquityStatus}}</td>
+                       </tr>
+                     </tbody>
+                   </table>
+             </div>
+     
+             <div *ngIf="checkResponse && !courseEnquiry">
+                 <table class='table'>
+                     <thead>
+                       <tr>
+                         <th>Resource Enquiry ID</th>
+                         <th>Resource ID</th>
+                         <th>User Name</th>
+                         <th>Email ID</th>
+                         <th>Phone Number</th>
+                         <th>Enquiry Status</th>
+                        
+                       </tr>
+                     </thead>
+                     <tbody>
+                       <tr *ngFor="let re of enquiries;">
+                         <td>{{re.rEnquiryId}}</td>
+                         <td>{{re.resourceId}}</td>
+                         <td>{{re.name}}</td>
+                         <td>{{re.email}}</td>
+                         <td>{{re.phoneNo}}</td>
+                         <td>{{re.resEnquiryStatus}}</td>
+                       </tr>
+                     </tbody>
+                   </table>
+             </div>
+         </form>
+     
+     </div>

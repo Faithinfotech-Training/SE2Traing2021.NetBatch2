@@ -1,0 +1,28 @@
+<div class="container">
+<form [formGroup]="editresourceForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="exampleInputEmail1" class="form-label">Resource ID</label>
+          <input type="text" class="form-control"  formControlName="resourceId">
+          <label for="exampleInputEmail1" class="form-label">Resource Name</label>
+          <input type="text" class="form-control"  formControlName="resourceName">     
+          <label for="exampleInputEmail1" class="form-label">Resource Type</label>
+          <input type="text" class="form-control"  formControlName="resourceType">
+          <label for="exampleInputEmail1" class="form-label">Resource Date</label>
+          <input type="text" class="form-control"  formControlName="resRecordDate">
+          <label for="exampleInputEmail1" class="form-label">Resource Status</label>
+          <input type="text" class="form-control" formControlName="resourceStatus" >
+          <!-- <label for="exampleInputEmail1" class="form-label">Test Score</label>
+          <input type="text" class="form-control"  formControlName="testScore">
+          <label for="exampleInputEmail1" class="form-label">Enquiry Date</label>     
+          <input type="text" class="form-control"  formControlName="enquiryDate">
+          <label for="exampleInputEmail1" class="form-label">Enquiry Status</label>
+          <input type="text" class="form-control"  formControlName="enquityStatus">
+          <label for="exampleInputEmail1" class="form-label">Course Id</label>
+          <input type="text" class="form-control" formControlName="courseId" > -->
+          
+        </div>
+        
+        <br><br>
+        <button type="submit" class="btn btn-primary">Update Resource</button>
+      </form> 
+    </div>

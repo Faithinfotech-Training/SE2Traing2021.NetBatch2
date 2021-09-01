@@ -1,0 +1,22 @@
+      <h5 style="align-items: center; justify-content: center;text-align: center; margin-top:25px;">List of Users In Application</h5>
+      <div class="container"  >
+          <!-- <button class="btn btn-info" routerLink="/courses/course">Add New Course</button> -->
+          <div class="column">
+              <div class="row" >
+                  <div class="card" style="width: 20rem; margin: 10px; "class="shadow p-3 mb-5 bg-white rounded border border-primary"   *ngFor="let c of userList;">
+                      <div class="container" >
+                          <!-- <p>{{c.UserName}}</p> -->
+                          <h5 class="card-title">Name:<b>{{c.fullName}}</b></h5>
+                          <p>Email:{{c.email}}</p>
+                          <p>Role:{{c.role}}</p>
+                          <!-- <p style="color:green"><strong style="color:black">Status:</strong>{{c.courseStatus}}</p>
+                          <p>{{c.courseAvailability}}</p>
+                          <button class="btn btn-outline-success" routerLink="/editcourse/{{c.couresId}}">Edit Course</button>
+                          <button class="btn btn-outline-danger" style="margin-left:15px;" routerLink="/delete/{{c.couresId}}">Delete</button>
+       -->
+                      </div>
+                  </div>
+              </div>
+      
+          </div>
+</div>
